@@ -7,15 +7,14 @@ local MainTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-MainTab:AddToggle({
-	Name = "Auto Pet Equip",
-	Default = false,
-	Callback = function(Value)
-		while true do
-                game:GetService("ReplicatedStorage").Network.Pets_ToggleFavoriteMode:FireServer()
-                wait(60)
-            end
-	end    
+Tab:AddButton({
+	Name = "Button!",
+	Callback = function()
+      		while true do
+game:GetService("ReplicatedStorage").Network.Pets_ToggleFavoriteMode:FireServer()
+wait(60)
+end
+  	end    
 })
 
 MainTab:AddButton({
