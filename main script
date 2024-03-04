@@ -8,9 +8,16 @@ local MainTab = Window:MakeTab({
 })
 
 MainTab:AddButton({
+	Name = "anti afk",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Darks-scripts/anti-afk-/main/darkscripts"))()
+  	end    
+})
+
+MainTab:AddButton({
 	Name = "Next world auto buy",
 	Callback = function()
-      		print("hello")
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Darks-scripts/Next-world-auto-buy/main/next"))()
   	end    
 })
 
