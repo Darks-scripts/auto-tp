@@ -7,23 +7,6 @@ local MainTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddButton({
-	Name = "Button!",
-	Callback = function()
-      		while true do
-game:GetService("ReplicatedStorage").Network.Pets_ToggleFavoriteMode:FireServer()
-wait(60)
-end
-  	end    
-})
-
-MainTab:AddButton({
-	Name = "Pet Equip buy",
-	Callback = function()
-      		print("hello")
-  	end    
-})
-
 MainTab:AddButton({
 	Name = "Next world auto buy",
 	Callback = function()
